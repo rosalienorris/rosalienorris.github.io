@@ -53,6 +53,37 @@ Question for the teaching team: The "Spun" theme is a series of circluar photogr
 
 <h5> Will this work? </h5>
 
+<h6> <title>soundbox</title>
+	
+	<style>
+	#soundbox{
+		height: 300px;
+		background-color:gray;
+		width:300px;
+		border-radius: 50%;
+
+	}
+
+	#soundbox:hover { 
+		background-color: pink; }
+	</style>
+</head>
+<body>
+	<div id="soundbox"></div>
+	<audio id="soundboxAudio" src="https://s3.amazonaws.com/rosalienorris/Are+You+That+Somebody.mp3"></audio>
+
+	<script>
+	var soundboxDiv = document.getElementById("soundbox");
+	var audio = document.getElementById("soundboxAudio");
+	soundboxDiv.addEventListener("mouseenter", function() {audio.play()
+
+	});
+	soundboxDiv.addEventListener("mouseleave", function() {audio.pause()
+
+	});
+
+	</script> </h6> 
+
 </body>
 
 
